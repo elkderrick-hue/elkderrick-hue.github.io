@@ -1,6 +1,7 @@
 ---
 title: 我的 Git 命令速查：从搭 Hexo 博客到日常发布（含这次踩坑用到的全部命令）
 date: 2026-02-02 00:20:00
+comments: true
 tags:
   - Git
   - GitHub

@@ -1,6 +1,7 @@
 ---
 title: Hexo + GitHub Pages + Butterfly 部署踩坑全记录
 date: 2026-02-01 23:00:00
+comments: true
 tags:
   - Hexo
   - GitHub Pages
