@@ -1,0 +1,38 @@
+/* ===== 首页视频背景（Butterfly） ===== */
+
+/* 1) header 作为定位容器 */
+#page-header {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* 2) 视频铺满并放到最底层 */
+#page-header > #index-video-bg {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+
+  /* 关键：确保在背景层 */
+  z-index: -3 !important;
+}
+
+/* 3) Butterfly 的遮罩层放在视频上面（但在文字下面） */
+#page-header::before,
+#page-header .mask {
+  z-index: -2 !important;
+}
+
+/* 4) 导航、标题等内容在最上层 */
+#nav,
+#site-info,
+#scroll-down {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* 5) 如果你看到仍然是纯色，说明主题给 header 设了背景色，这里强制去掉 */
+#page-header.full_page {
+  background: transparent !important;
+}
