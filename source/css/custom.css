@@ -1,5 +1,3 @@
-/* ===== 首页视频背景（Butterfly） ===== */
-
 /* 1) header 作为定位容器 */
 #page-header {
   position: relative !important;
@@ -35,4 +33,4 @@
 /* 5) 如果你看到仍然是纯色，说明主题给 header 设了背景色，这里强制去掉 */
 #page-header.full_page {
   background: transparent !important;
-}
+} 
